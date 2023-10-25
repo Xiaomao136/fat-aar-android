@@ -4,11 +4,11 @@ import com.android.build.gradle.internal.LoggerWrapper;
 import com.android.manifmerger.ManifestMerger2;
 import com.android.manifmerger.ManifestProvider;
 import com.android.manifmerger.MergingReport;
-import com.android.utils.ILogger;
 
 import org.apache.tools.ant.BuildException;
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
+import com.android.utils.ILogger;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -54,8 +54,7 @@ public class LibraryManifestMerger extends DefaultTask {
     @TaskAction
     protected void doFullTaskAction() throws ManifestMerger2.MergeFailureException, IOException {
         ILogger iLogger = new LoggerWrapper(getLogger());
-        ManifestMerger2.Invoker mergerInvoker = ManifestMerger2.
-                newMerger(getMainManifestFile(), iLogger, ManifestMerger2.MergeType.LIBRARY);
+        ManifestMerger2.Invoker mergerInvoker = ManifestMerger2.newMerger(getMainManifestFile(), iLogger, ManifestMerger2.MergeType.LIBRARY);
         List<File> secondaryManifestFiles = getSecondaryManifestFiles();
         List<ManifestProvider> manifestProviders = new ArrayList<>();
         if (secondaryManifestFiles != null) {
