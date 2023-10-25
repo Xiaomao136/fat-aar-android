@@ -43,7 +43,7 @@ publishing {
                 name = PUBLISH_ARTIFACT_ID
                 description = 'A gradle plugin that merge dependencies into the final aar file works with AGP 3.+'
                 // If your project has a dedicated site, use its URL here
-                url = 'https://github.com/kezong/fat-aar-android'
+                url = 'https://github.com/Xiaomao136/fat-aar-android'
                 licenses {
                     license {
                         name = 'The MIT License'
@@ -52,16 +52,16 @@ publishing {
                 }
                 developers {
                     developer {
-                        id = 'kezong'
-                        name = 'kezong'
-                        email = 'kezong1811@gmail.com'
+                        id = 'Xiaomao136'
+                        name = 'Xiaomao136'
+                        email = 'yuanxiaomao136@gmail.com'
                     }
                 }
                 // Version control info, if you're using GitHub, follow the format as seen here
                 scm {
-                    connection = 'scm:git:github.com/kezong/fat-aar-android.git'
-                    developerConnection = 'scm:git:ssh://github.com/kezong/fat-aar-android.git'
-                    url = 'https://github.com/kezong/fat-aar-android/tree/master'
+                    connection = 'scm:git:github.com/Xiaomao136/fat-aar-android.git'
+                    developerConnection = 'scm:git:ssh://github.com/Xiaomao136/fat-aar-android.git'
+                    url = 'https://github.com/Xiaomao136/fat-aar-android/tree/master'
                 }
                 // A slightly hacky fix so that your POM will include any transitive dependencies
                 // that your library builds upon
